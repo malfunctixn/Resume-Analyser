@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+
+    {% block title %}|Home  {% endblock %}
+
+{% block content %}
+<style>
+label{font-size: 20px;}
+
+</style>
+                                      <!--     HOME      -->
+
+        <div id="home" ><br>
+           <form class="form-horizontal" action="/submit" method="post" enctype="multipart/form-data">
+               <label class="control-label " for="audio"><strong>Enter the keywords</strong></label><br><br><br>
+               <textarea style="width:50%;height:100px;margin-top:-15px;max-height:300px;font-size:20px;"   class="form-control" required placeholder="Type here.... "  name="text" id="audio"></textarea><br>
+               <button style="width:100px;height:50px;margin-left:-20px;" type="submit" class="btn-success predict">Search</button>
+
+           </form><br>
+
+           </div>
+
+{% endblock %}
+
+
+
+
+
+
+
